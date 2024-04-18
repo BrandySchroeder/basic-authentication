@@ -14,6 +14,11 @@ const Nav = (props) => {
             <HomeOutlined />Home
           </Link>
           </Menu.Item>
+          <Menu.Item key='MorePublic'>
+          <Link to='/MorePublic'>
+          <ProfileOutlined />Public
+          </Link>
+        </Menu.Item>
         <Menu.Item key='profile'>
           <Link to='/profile'>
           <ProfileOutlined />Profile

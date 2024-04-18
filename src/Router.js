@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import Nav from './Nav';
 import Public from './Public';
+import MorePublic from './MorePublic';
 import Profile from './Profile';
 import Protected from './Protected';
 
@@ -25,6 +26,7 @@ const Router = () => {
       <Nav current={current} />
       <Routes>
         <Route exact path="/" element={<Public />}/>
+        <Route exact path="/MorePublic" element={<MorePublic />}/>
         <Route exact path="/protected" element={<Protected />} />
         <Route exact path="/profile" element={<Profile />}/>
         <Route element={<Public />}/>
